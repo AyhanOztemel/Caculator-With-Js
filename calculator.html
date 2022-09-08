@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+	<link rel="stylesheet" href="calculator.css">
+	
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="calcaltor-label">
+        HESAP MAKİNASI
+      </h2>
+      <input class="input-label" id="icerik"/>
+      <div>
+        <span class="sonuc-label" >SONUÇ:</span>
+        <span id="sonuc"></span>
+      </div>
+      <br />
+      <button onclick="kompleTemizle()" class="button-label-left">
+        OFF
+      </button>
+      <button onclick="rakamYaz(7)" class="button-label-other">7</button>
+      <button onclick="rakamYaz(8)" class="button-label-other">8</button>
+      <button onclick="rakamYaz(9)" class="button-label-other">9</button>
+      <button onclick="sonRakamTemizle()" class="button-label-other">
+        SİL
+      </button>
+      <button onclick="kareAl()" class="button-label-other"><p> <sub>X</sub> 2</p></button>
+      <button onclick="mSilHafiza('MC')"class="button-label-other">MC</button>
+      <br />
+      <button onclick="yuzdeHesapla('%')"class="button-label-left">%</button>
+      <button onclick="rakamYaz(4)" class="button-label-other">4</button>
+      <button onclick="rakamYaz(5)" class="button-label-other">5</button>
+      <button onclick="rakamYaz(6)" class="button-label-other">6</button>
+      <button onclick="cikarmaIslemi('-')" class="button-label-other">
+        -
+      </button>
+      <button onclick="bolmeIslemi('/')" class="button-label-other">/</button>
+      <button onclick="mToplamHafiza('MR')" class="button-label-other">MR</button>
+      <br />
+      <button onclick="isaretDegistir()" class="button-label-left">+/-</button>
+      <button onclick="rakamYaz(1)" class="button-label-other">1</button>
+      <button onclick="rakamYaz(2)" class="button-label-other">2</button>
+      <button onclick="rakamYaz(3)" class="button-label-other">3</button>
+      <button onclick="toplamaIslemi('+')" class="button-label-other"> +</button>
+      <button onclick="carpmaIslemi('x')" class="button-label-other">x</button>
+      <button onclick="mEksiHafiza('M-')"class="button-label-other">M-</button>
+      <br />
+      <button onclick="kompleTemizle()" class="button-label-left">ON/C</button>
+      <button onclick="sifirYaz(0)" class="button-label-other">0</button>
+      <button onclick="ciftSifirYaz('00')" class="button-label-other"> 00</button>
+      <button onclick="noktaYaz('.')" class="button-label-other">.</button>
+      <button onclick="kakeKokAl()"class="button-label-other">√¯</button>
+      <button onclick="esittir('=')" class="button-label-other">=</button>
+      <button onclick="mArtiHafiza('M+')" class="button-label-other">M+</button>
+      <br />
+    </div>
+	
+  </body>
+  <script src="calculator.js"></script>
+</html>
